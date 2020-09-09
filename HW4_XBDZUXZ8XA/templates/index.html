@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>individual assignment</title>
+    <link rel="stylesheet"  href="style.css">
+
+    <script src="script.js"></script>
+    
+     </head>
+     
+     <body>
+
+      <h1 style="color: blue;"><b>COVID-19</b></h1>
+    
+
+         
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Corona.html">About</a>
+        <a href="Cases.html">Cases</a>
+        <a href="Contact.html">contact</a></b>
+    </nav>
+  
+<div class="center">
+    <p><b><i>Coronaviruses</i></b> are a large group of viruses that are common among animals. In rare cases, they are what scientists call zoonotic,
+       meaning they can be transmitted from animals to humans, according to the US Centers for Disease Control and Prevention. 
+       It is a dangerous diseases with incubation period 
+       between 4-6 days.It is fatal especially for those with weakened immune system, the elderly and the very young. 
+       It could also result in Pneumonia and bronchitis.</p>
+       </p>
+    </div>
+
+
+<div>
+    <footer Style="-ms-flex-align: center;">
+ <p>Author: Najat Akalga <br>
+<a href="">&copy; <br> efyanajat@gmail.com</a></p>
+</footer>
+</div>
+<a href="https://web.facebook.com/profile.php?id=100011482454749" >
+    <img src="/images/logo 2.jpg" width="40px" height="40px">
+</a>
+
+<a href="https://www.instagram.com/officialnajbrown?r=nametag" >
+    <img src="/images/logo 1.jpg" width="40px" height="40px"></a>
+
+<a href="https://wa.me/+233248166023" ><img src="/images/logo4.png" width="40px" height="40px">
+</a>
+
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+</body>
+</html>
